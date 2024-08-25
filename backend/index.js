@@ -1,4 +1,3 @@
-// backend/index.js
 const express = require('express');
 const cors = require('cors');
 const connectDB = require('./config/db');
@@ -13,6 +12,8 @@ connectDB();
 // Enable CORS for requests from your frontend
 app.use(cors({
   origin: 'https://bespoke-jelly-a765ad.netlify.app', // Adjust as per your frontend's URL
+  methods: 'GET,HEAD,PUT,PATCH,POST,DELETE', // Allow specific methods if needed
+  credentials: true, // Enable if your request needs to include credentials (cookies, authorization headers, etc.)
 }));
 
 // Middleware
