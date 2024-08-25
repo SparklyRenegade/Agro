@@ -12,7 +12,7 @@ connectDB();
 
 // Enable CORS for requests from your frontend
 app.use(cors({
-  origin: 'http://localhost:3000', // Adjust as per your frontend's URL
+  origin: 'https://bespoke-jelly-a765ad.netlify.app', // Adjust as per your frontend's URL
 }));
 
 // Middleware
